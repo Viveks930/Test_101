@@ -7,15 +7,30 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-red-400 flex justify-center items-center flex-col h-50">
+  <body class="bg-pink-300 flex justify-center items-center flex-col min-h-lvh">
     <!-- Loader -->
     <div id="loader">
       <h1>Hello Baby ❤️</h1>
     </div>
-    <h1 class="">This is the landing page</h1>
-    <button class="border-2 rounded mt-2 bg-red-600 p-3 cursor-pointer">
-      <a href="select.html">Select page</a>
-    </button>
+
+    <!-- Div for text -->
+    <div class="text border-2 px-10 py-5">
+      <h1>This will be the animated text</h1>
+    </div>
+
+    <!-- div for code box -->
+    <div class="otp-container">
+      <input type="text" maxlength="1" class="otp-box" />
+      <input type="text" maxlength="1" class="otp-box" />
+      <input type="text" maxlength="1" class="otp-box" />
+      <input type="text" maxlength="1" class="otp-box" />
+    </div>
+    <button onclick="checkCode()" class="rounded-full px-5 py-3">Enter</button>
+
+    <!-- script for loader -->
     <script src="./js/loader.js"></script>
+
+    <!-- script for auth -->
+    <script src="./js/auth.js"></script>
   </body>
 </html>
