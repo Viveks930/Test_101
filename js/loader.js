@@ -11,5 +11,5 @@ window.addEventListener("load", () => {
     setTimeout(() => {
       loader.style.display = "none";
     }, 800);
-  }, 2000);
+  }, 1000);
 });
