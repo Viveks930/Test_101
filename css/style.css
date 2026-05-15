@@ -78,27 +78,27 @@ button {
 }
 .wrapper .static_txt {
   color: red;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700;
 }
 .wrapper .dynamic_txt {
   margin-left: 7px;
   /* background-color: red; */
-  line-height: 30px;
-  height: 30px;
+  line-height: 45px;
+  height: 45px;
   overflow: hidden;
 }
 .dynamic_txt li {
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 800;
   position: relative;
   top: 0;
-  animation: slide 7s steps(4) infinite;
+  animation: slide 7.2s steps(4) infinite;
 }
 @keyframes slide {
   100% {
-    top: -120px;
+    top: -179px;
   }
 }
 .dynamic_txt li span {
