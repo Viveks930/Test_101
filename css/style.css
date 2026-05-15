@@ -107,8 +107,9 @@ button {
 .dynamic_txt li span::after {
   content: "";
   position: absolute;
+  bottom: 0;
   background-color: pink;
-  height: 110%;
+  height: 100%;
   width: 100%;
   border-left: 2px solid red;
   left: 0;
