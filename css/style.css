@@ -83,7 +83,7 @@ button {
 }
 .wrapper .dynamic_txt {
   margin-left: 7px;
-  /* background-color: red; */
+  background-color: red;
   line-height: 45px;
   height: 45px;
   overflow: hidden;
