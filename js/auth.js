@@ -14,6 +14,17 @@ inputs.forEach((input, index) => {
     if (index < inputs.length - 1) {
       inputs[index + 1].focus();
     }
+    input.addEventListener("keydown", (e) => {
+      // backspace → go to previous box
+      if (e.key === "Backspace" && input.value === "" && index > 0) {
+        inputs[index - 1].focus();
+      }
+
+      // ENTER key → submit
+      if (e.key === "Enter") {
+        checkCode();
+      }
+    });
   });
 
   input.addEventListener("keydown", (e) => {
@@ -35,7 +46,7 @@ function checkCode() {
 
   if (code === correctCode) {
     localStorage.setItem("ok", "1");
-    window.location.href = "select.html";
+    window.location.href = "gallery.html";
   } else {
     alert("Wrong code 😅");
   }
