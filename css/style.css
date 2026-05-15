@@ -6,6 +6,15 @@
   font-style: normal;
 } */
 
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  background-color: pink;
+}
+
 #loader {
   position: fixed;
   top: 0;
@@ -13,7 +22,7 @@
   width: 100%;
   height: 100%;
   background: rgb(245, 198, 198);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 9999;
@@ -56,4 +65,54 @@
 
 button {
   border: 2px solid #702197;
+}
+
+.wrapper {
+  /* border: 2px solid black; */
+  display: inline-flex;
+  margin-bottom: 20px;
+}
+.wrapper .static_txt {
+  color: red;
+  font-size: 20px;
+  font-weight: 700;
+}
+.wrapper .dynamic_txt {
+  margin-left: 7px;
+  /* background-color: red; */
+  line-height: 30px;
+  height: 30px;
+  overflow: hidden;
+}
+.dynamic_txt li {
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  position: relative;
+  top: 0;
+  animation: slide 7s steps(4) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -120px;
+  }
+}
+.dynamic_txt li span {
+  position: relative;
+}
+.dynamic_txt li span::after {
+  content: "";
+  position: absolute;
+  background-color: pink;
+  height: 100%;
+  width: 100%;
+  border-left: 2px solid red;
+  left: 0;
+  animation: typing 1.7s steps(9) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -18px 0 18px;
+  }
 }
